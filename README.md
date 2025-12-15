@@ -1,85 +1,63 @@
-Wearable Health Monitoring System (SEL703)
-Project Overview
+# Wearable Health Monitoring System (SEL703)
 
-This repository contains the documentation and progress updates for a wearable health monitoring project developed as part of the SEL703 Work-Integrated Learning (WIL) unit.
-The project focuses on designing a lightweight, microcontroller-based wearable system to monitor essential physiological and activity metrics, with basic on-device processing and data visualisation through a web dashboard.
+## Overview
+This repository contains the documentation and weekly progress updates for a **wearable health monitoring project** developed as part of **SEL703 Work-Integrated Learning (WIL)**. The project focuses on building a **lightweight, microcontroller-based wearable prototype** that captures essential physiological and activity data, performs basic on-device processing (algorithm/ML where appropriate), and supports visualisation through a web-based dashboard.
 
-The system is intentionally narrowed to a single core purpose to ensure practical feasibility, professional alignment, and meaningful evaluation within the internship timeframe.
+> Note: This prototype is for learning and research purposes and is **not** a medical diagnostic device.
 
-Project Focus
+---
 
-Primary domain: Health monitoring / wellbeing (non-diagnostic)
+## Project Focus
+- **Primary goal:** Practical wearable monitoring for health/wellbeing (non-diagnostic)
+- **Key measurements:** Heart rate (PPG), steps/activity (accelerometer/IMU), optional temperature
+- **Analytics:** Lightweight preprocessing + simple algorithm / ML model (edge-first approach)
+- **Output:** Data transmission (BLE/Wi-Fi) + backend storage + web dashboard
 
-Approach: Lightweight sensing + edge analytics
+---
 
-Target users: General users and potential patient monitoring contexts
+## Key Deliverables (Planned / In Progress)
+- Wearable firmware for sensor reading, filtering, and feature extraction
+- Lightweight edge analytics (rule-based or ML model depending on feasibility)
+- Data pipeline from device → gateway/backend → database
+- Web dashboard to display real-time and historical trends
+- Weekly progress logs + meeting notes aligned to SEL703 reporting expectations
 
-Design goal: Simple, reliable, and extensible wearable prototype
+---
 
-Key Features (Planned / In Progress)
+## Tech Stack (High Level)
+- **Hardware:** ESP32 + wearable sensors (PPG, IMU, optional temperature)
+- **Embedded:** C/C++ (Arduino/ESP-IDF style)
+- **Backend:** REST API + database (implementation in progress)
+- **Frontend:** Web dashboard (React/Next.js planned)
+- **Documentation:** Weekly logs + design notes + meeting takeaways
 
-Heart rate monitoring using PPG sensor
+---
 
-Step counting and activity detection using motion sensors
-
-On-device preprocessing and basic algorithm / ML model
-
-Wireless data transmission (BLE / Wi-Fi)
-
-Backend data storage and web-based dashboard
-
-Progressively refined design based on research and supervisor feedback
-
-Technology Stack
-
-Hardware: ESP32 microcontroller, wearable sensors
-
-Embedded: C/C++ (Arduino / ESP-IDF style)
-
-Data & Backend: REST API, database (planned)
-
-Frontend: Web dashboard for data visualisation
-
-Version Control: GitHub for documentation and progress tracking
-
-Repository Structure
-/docs
-  ├─ weekly-logs/
-  ├─ meeting-notes/
-  ├─ design-notes/
-README.md
+## Repository Structure
 
 
-weekly-logs/ – Week-by-week progress, tasks, and reflections
+- `docs/weekly-logs/` – Week-by-week progress, tasks, reflections
+- `docs/meeting-notes/` – Mentor/supervisor meeting takeaways
+- `docs/design-notes/` – Scope decisions, architecture notes, component rationale
 
-meeting-notes/ – Supervisor/mentor meeting takeaways
+---
 
-design-notes/ – Architecture decisions, scope refinement, and rationale
+## Current Status
+- ✅ Project scope narrowed based on mentor guidance
+- ✅ Component options identified (MCU + sensors + power)
+- 🔄 Research + initial algorithm/ML approach in progress
+- 🔄 Architecture + prototype implementation ongoing
 
-Project Status
+---
 
-   Project scope defined and narrowed
+## How This Aligns With SEL703
+This repository supports professional practice by demonstrating:
+- Scope management and evidence-based decision making
+- Iterative development with regular progress documentation
+- Reflection and reporting aligned to unit expectations
+- Industry-relevant IoT + embedded + software system design
 
-   Use cases aligned with supervisor guidance
+---
 
-   Component selection completed
-
-🔄 Research and initial ML/algorithm design in progress
-
-🔄 System architecture and prototype development ongoing
-
-Professional & Learning Outcomes
-
-This project demonstrates:
-
-Applied problem-solving and scope management
-
-Practical use of IoT and embedded systems
-
-Reflection and progress tracking aligned with SEL703 requirements
-
-Industry-relevant system design and documentation practices
-
-Notes
-
-This project is developed for learning and research purposes only and is not intended as a medical diagnostic device.
+## License / Usage
+This repository is maintained for SEL703 documentation and prototype development. Reuse is allowed for learning purposes with appropriate attribution.
