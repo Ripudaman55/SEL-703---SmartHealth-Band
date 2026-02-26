@@ -1,0 +1,43 @@
+{
+  "model_name": "RandomForestClassifier (demo)",
+  "dataset": "wearable_data.csv (demo)",
+  "timestamp": "2026-02-26T12:00:00Z",
+  "metrics": {
+    "accuracy": 0.956,
+    "balanced_accuracy": 0.954,
+    "macro_f1": 0.956,
+    "cv_scores": [0.950, 0.960, 0.940, 0.955, 0.959],
+    "cv_mean": 0.9528,
+    "cv_std": 0.0067
+  },
+  "classification_report": {
+    "sitting": { "precision": 0.96, "recall": 0.95, "f1-score": 0.95, "support": 180 },
+    "walking": { "precision": 0.93, "recall": 0.94, "f1-score": 0.94, "support": 180 },
+    "running": { "precision": 0.97, "recall": 0.98, "f1-score": 0.98, "support": 190 },
+    "accuracy": 0.956,
+    "macro_avg": { "precision": 0.9533, "recall": 0.9567, "f1-score": 0.9567 },
+    "weighted_avg": { "precision": 0.9560, "recall": 0.9560, "f1-score": 0.9560 }
+  },
+  "confusion_matrix": {
+    "labels": ["sitting", "walking", "running"],
+    "matrix": [
+      [171, 7, 2],
+      [6, 169, 5],
+      [1, 3, 186]
+    ]
+  },
+  "feature_importances": {
+    "heart_rate": 0.41,
+    "acc_magnitude": 0.22,
+    "acc_x": 0.10,
+    "acc_z": 0.09,
+    "acc_y": 0.07,
+    "hr_temp_ratio": 0.06,
+    "temperature": 0.05
+  },
+  "example_predictions": [
+    { "input": { "heart_rate": 78.2, "temperature": 36.7, "acc_x": 180.5, "acc_y": 45.1, "acc_z": 1002.3 }, "predicted": "walking", "probabilities": { "sitting": 0.02, "walking": 0.92, "running": 0.06 } },
+    { "input": { "heart_rate": 128.8, "temperature": 37.3, "acc_x": 620.9, "acc_y": 260.4, "acc_z": 1105.6 }, "predicted": "running", "probabilities": { "sitting": 0.01, "walking": 0.03, "running": 0.96 } }
+  ],
+  "notes": "This is a synthetic/demo results file for presentation. Replace with real metrics by running the training pipeline."
+}
