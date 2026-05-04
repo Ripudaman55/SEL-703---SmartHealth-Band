@@ -1,7 +1,7 @@
 # Wearable Health Monitoring System (SEL703)
 
 ## Overview
-This repository contains the documentation and weekly progress updates for a **wearable health monitoring project** developed as part of **SEL703 Work-Integrated Learning (WIL)**. The project focuses on building a **lightweight, microcontroller-based wearable prototype** that captures essential physiological and activity data, performs basic on-device processing (algorithm/ML where appropriate), and supports visualisation through a web-based dashboard.
+This repository contains the documentation and weekly progress updates for a **wearable health monitoring project** developed as part ofDeakin unit. The project focuses on building a **lightweight, microcontroller-based wearable prototype** that captures essential physiological and activity data, performs basic on-device processing (algorithm/ML where appropriate), and supports visualisation through a web-based dashboard.
 
 > Note: This prototype is for learning and research purposes and is **not** a medical diagnostic device.
 
